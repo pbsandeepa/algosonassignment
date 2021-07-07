@@ -19,7 +19,7 @@
       </q-toolbar>
     </q-header> -->
 
-    <q-drawer
+    <!-- <q-drawer
       v-model="leftDrawerOpen"
       bordered
       class="bg-as-grey text-white"
@@ -27,12 +27,7 @@
       :width="260"
     >
       <q-list>
-        <q-item-label header>
-          <img src="./assets/logo.svg"/>
-        </q-item-label>
-        <q-item-label header class="q-mb-lg">
-          Trusted way of banking for 3,000+ SMEs and startups in Singapore
-        </q-item-label>
+        
         
         <q-item clickable tag="a" to="/Customer" active-class="text-as-green">
           <q-item-section avatar>
@@ -59,7 +54,7 @@
           </q-item-section>
         </q-item>
       </q-list>
-    </q-drawer>
+    </q-drawer> -->
 
     <q-page-container>
       <router-view></router-view>

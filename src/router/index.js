@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Admin from '../components/Admin.vue'
-import Customer from '../components/Customer.vue'
-import Repay from '../components/Repay.vue'
+import Users from '../components/Users.vue'
+import Posts from '../components/Posts.vue'
+import PostDetails from '../components/PostDetails.vue'
 
 Vue.use(VueRouter)
 
@@ -12,22 +12,22 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    redirect:'/Customer'
+    redirect:'/Users'
   },
   {
-    path: '/Customer',
-    name: 'Customer',
-    component: Customer
+    path: '/Users',
+    name: 'Users',
+    component: Users
   },
   {
-    path: '/Admin',
-    name: 'Admin',
-    component: Admin
+    path: '/Posts',
+    name: 'Posts',
+    component: Posts
   },
   {
-    path: '/Repay',
-    name: 'Repay',
-    component: Repay
+    path: '/PostDetails',
+    name: 'PostDetails',
+    component: PostDetails
   },
   {
     path: '/about',
